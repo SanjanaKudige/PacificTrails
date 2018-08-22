@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  background-color: #4F6D93;
+  background: linear-gradient(#FFF, #4F6D93);
+  background-image: url("../Images/background.jpg")
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #000033;
+  color: #FFF;
+  background-image: url("../Images/sunset.jpg");
+  padding-top: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 60px;
+  line-height: 200%;
+}
+
+nav ul {
+  font-weight: bold;
+  padding: 20px 20px 20px 0;
+  float: left;
+  width: 160px;
+  list-style: none;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+nav a {
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+
+main {
+  padding: 5px 20px 20px 30px;
+  display: block;
+  background-color: #FFF;
+  margin-left: 190px;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 0;
+  text-align: left;
+  margin-top: 0;
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+h2 {
+  color: #3399CC;
+  font-family: sans-serif;
+}
+
+dt {
+  color: #000033;
+  font-weight: bold;
+}
+
+.resort {
+  color: #4F6D93;
+  font-weight: bold;
+}
+footer {
+  font-size: 75%;
+  font-style: italic;
+  background-color: #FFF;
+  text-align: center;
+  font-family: Georgia;
+  padding: 20px;
+  margin-left: 190px;
+}
+
+#address {
+  font-size: 90%;
+}
+
+#wrapper {
+  margin: auto;
+  width: 80%;
+  background-color: #90c7e3;
+  min-width: 960px;
+  max-width: 2048px;
+  box-shadow: 3px 3px #444;
+}
+
+#home {
+  height: 300px;
+  background-image: url("../Images/coast.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 190px
+}
+
+#yurt {
+  background-repeat: no-repeat;
+  height: 300px;
+  background-image: url("../Images/yurt.jpg");
+  background-size: 100% 100%;
+  margin-left: 190px
+}
+
+#trail {
+  height: 300px;
+  background-image: url("../Images/trail.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 190px
+}
+
+#trailguide{
+  float: left;
+}
+
+#yurtyoga{
+  float: left;
+  margin-top: 35px;
+  margin-right: 10px;
+}
+
+
+club {
+ 
+  margin-top: 60px;
+  float: right;
+}
+
+table {
+  border: solid;
+  border-width: 0.75px;
+  border-color: #3399CC;
+  width: 90%;
+  border-spacing: 0;
+
+}
+td, th {
+  padding: 5px;
+  border: solid;
+  border-width: 0.5px;
+  border-color: #3399CC;
+}
+td {
+  text-align: center;
+}
+.text {
+  text-align: left;
+}
+
+tr:nth-of-type(even) {
+  background-color: #F5FAFC;
+}
+@media only screen and (max-width: 64em) {
+  #wrapper {
+    min-width: 0;
+    width: auto;
+    box-shadow: none;
+  }
+  body {
+    margin: 0;
+    background-color: #FFF;
+  }
+   main {
+    margin: 0;
+  }
+    nav ul {
+    float: none;
+    width: auto;
+    text-align: center;
+    padding: 0.5em;
+  }
+  nav li {
+    display: inline;
+    padding: 0.25em 0.75em;
+  }
+  main {
+    margin: 0;
+  }
+
+  #home, #yurt, #trail {
+    margin-left: 0;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  header {
+    padding-top: 1em;
+  }
+
+  main {
+    padding: 0.1em 1em;
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    border-width: 2px;
+    display: block;
+    margin: 0;
+    border-bottom: solid;
+    border-color: #330000;
+  }
+  #home, #yurt, #trail {
+    margin-left: 0;
+    height: 200px;
+  }
+}
+
+input, text
+{
+  display: inline-block;
+}

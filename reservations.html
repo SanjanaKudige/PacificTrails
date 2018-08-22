@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <title>Pacific Trails Resort</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/pacific.css" >
+  <script type="text/javascript" src="form.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Pacific Trails Resort</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="myreservations.html">MyReservations</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Reservations at Pacific Trails</h2>
+      <p><span class="resort">Contact Us</span></p>
+      <p>Required information is marked with an asterisk(*)</p>
+      <form action="reservations.php" method="post">
+        
+
+        * First name:
+        <input type="text" name="firstname" required="required">
+        <br><br>
+        * Last name:
+        <input type="text" name="lastname" required="required">
+        <br><br>
+        * E-Mail:
+        <input type="text" name="email" required="required">
+        <br><br>
+        Phone:
+        <input type="text" name="phone">
+        <br><br>
+        Arrival Date:
+        <input type="date" name="arrivaldate">
+        <br><br>
+        Nights:
+        <input type="number" name="nights">
+        <br><br>
+        * Comments:
+        <textarea rows="2" cols="10" name="comments" rows="5" required="required"></textarea>
+        <br><br>
+        * Activities:
+        <select name="activities" required="required">
+          <option type="text" value="hiking">Hiking</option>
+          <option type="text" value="Kayaking">Kayaking</option>
+          <option type="text" value="Bird Watching">Bird Watching</option>
+        </select>
+        <br><br>
+        * Packages:
+        <select name="packages" required="required">
+          <option type="text" value="weekend escape">Weekend Escape</option>
+          <option type="text" value="Zen Retreat">Zen Retreat</option>
+          <option type="text" value="Kayak Away">Kayak Away</option>
+        </select>
+        <br><br>
+        When:
+        <input type="date" name="wheny">
+        <br><br>
+        <input type="submit" value="Submit" name="Submit" onclick="validateForm()">
+      </form>
+    </main>
+    <footer>
+      <em>Copyright &copy; 2018 Pacific Trails Resort<br>
+        <a href="mailto:sanjana@kudigeanishkumar.com">sanjana@kudigeanishkumar.com</a></em>
+      </footer>
+    </div>
+  </body>
+  </html>
